@@ -42,7 +42,7 @@
     background-color: #c6c6c6;
     transition: all0.25s;
 }
-.banner_fadeButton{
+.banner_fadeBottom{
     height: 40vh;
     background-image: linear-gradient(
 180deg,
