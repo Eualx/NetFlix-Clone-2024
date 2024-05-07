@@ -3,6 +3,7 @@
     color: grey;
     display: flex;
     justify-content: center;
+    
 }
 .footer_inner_container {
     width: 60%;
@@ -10,11 +11,16 @@
 }
 .footer_icons {
     /* background-color: blue; */
-    width: 12%;
+    width: 15%;
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    color: #fff;
+    margin-top: 10px;
+    
+}
+.footer_icons a{
+    text-decoration: none;
+    color:  grey; ;
 }
 .footer_data {
     display: flex;
@@ -44,3 +50,24 @@
     font-style: 12px;
     margin-bottom: 10px;
 }
+@media (max-width: 768px){
+    .service_code {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #fff 1px solid;
+        width: 60%;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+    .footer_data{
+        display: inline;
+        justify-content:center;      
+    }
+    .footer_inner_container {
+        width: 30%;
+    }
+}
+
+    
+

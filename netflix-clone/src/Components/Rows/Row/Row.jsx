@@ -47,8 +47,8 @@ if (trailerurl){
 
   return (
     <div className='row'>
-        <h1>{title}</h1>
-        <div className='row_posters'>
+        <h2>{title}</h2>
+        <div className='row_posters'>  
             {movies?.map((movie,index)=>(
 <img onClick={()=>handleClick(movie)} key={index} src={`${base_url}${isLargeRow? movie.poster_path:movie.backdrop_path}`} alt={movie.name} className={`row_poster ${isLargeRow && "row_posterLarge"}`}/>
             )
@@ -56,7 +56,7 @@ if (trailerurl){
             }
 
         </div>
-<div style={{padding:'40px'}}>{
+<div style={{padding:'0px'}}>{
     trailerurl && <YouTube videoId={trailerurl} opts={opts}/>
 }
 </div>

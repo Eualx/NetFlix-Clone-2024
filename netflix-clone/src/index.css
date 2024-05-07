@@ -6,3 +6,6 @@
     --primary-color:#ffffff;
     --secondary-color:#e50914; 
 }
+body {
+    background: #111;
+  }

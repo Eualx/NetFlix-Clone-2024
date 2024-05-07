@@ -3,9 +3,7 @@
     object-fit: contain;
     max-height: 100px;
     transition: transform 450ms;
-    margin-right: 10px;
-    background-color: black;
-   
+    margin-right: 10px;  
 }
 .row_posters{
     display: flex;
@@ -17,16 +15,16 @@
     display: none;
 }
 .row_poster:hover{
-    transform: scale(1.08);
+    transform: scale(1.19);
 }
 .row_posterLarge{
     max-height: 250px;
 }
 .row_posterLarge:hover{
-    transform: scale(1.09);
+    transform: scale(1.19);
 }
 .row{
     margin-left: 20px;
     color: white;
-    background-color: black;
+    /* background-color: black; */
 }
