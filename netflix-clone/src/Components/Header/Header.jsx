@@ -25,9 +25,11 @@ const Header = () => {
        
     <div className='left'>
         <ul>
-            <li className='image'><a href="#"><img src={Logo} alt="NetFlix Logo" width="100" /></a></li> </ul></div>
-            
-            <div className='center'>
+            <li className='image'><a href="#"><img src={Logo} alt="NetFlix Logo" width="100" /></a>
+            </li>
+             </ul>
+             </div> 
+             <div className='center'>
               <ul>
             <li className='browse'>Browse</li>
             <input type="checkbox" id="check"/>
@@ -43,7 +45,7 @@ const Header = () => {
             <li><Link to="/My_List" >My List</Link></li>
             <li><Link to="/Browse_by_Language" >Browse by Language</Link></li>
           </ul>
-          </div>   
+          </div>     
         <div className='right'> 
           <ul>
           <i className="fa fa-search" aria-hidden="true"></i>
@@ -55,10 +57,10 @@ const Header = () => {
           </ul>
         </div>
         <div className='box'>
-        <label htmlFor="check" class="checkbtn">
         <i class="fa fa-search" aria-hidden="true"></i>
           <input type="text" name=''placeholder='   Titles, people, genres'/> 
-          </label>
+        <a href=""></a>
+      
         </div>
         </div> 
      </div >

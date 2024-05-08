@@ -73,6 +73,21 @@ align-items: center;
     padding: 15px;
     display: none;
 }
+.box:hover input{
+width: 400px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fas{
+    color: aqua;
+    font-size:20px ;
+} 
 .box > i{
 font-size: 20px;
 color: #777;
@@ -83,9 +98,7 @@ color: #777;
     background-color: black;
     border-color: black;
 }
-#check:checked~ input{
-    right:0
-}
+
 
 @media screen and (max-width:768px) {
      .browse{
@@ -111,10 +124,14 @@ color: #777;
         padding: 20px;
     }
    
-    #check:checked~ li a{
+    #check:checked~  li a{
         right:0
     }
-    
+    /* #check:checked ~ ul.checkbtn + ul li a {
+        right: 0;
+      } */
+
+      
     #check:checked~ label #bars{
         display: none;
     } 
@@ -122,6 +139,5 @@ color: #777;
 display: block;    
 } 
 
- 
 }
 
