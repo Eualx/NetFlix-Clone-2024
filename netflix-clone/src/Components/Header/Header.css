@@ -41,10 +41,7 @@ align-items: center;
 }
 .left ul {
     width: 140%;
-    display: flex;
-    align-items: center;
     list-style: none;
-    justify-content: space-between;
 }
 .header_outer_container a{
     text-decoration: none;
@@ -63,7 +60,7 @@ align-items: center;
     cursor: pointer;
     display: none;
 }
-.box{
+/* .box{
     width: 200px;
     height: 4px;
     background-color: black;
@@ -97,16 +94,15 @@ color: #777;
     height:20px ;
     background-color: black;
     border-color: black;
-}
+} */
 
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
      .browse{
-        display: block
+        display: block !important;
     }
     .center  ul li a{
-        display: block;
-        margin:40px 0 ;
+        display: none;
     }
     .checkbtn #bars{
         display: block;
@@ -127,17 +123,14 @@ color: #777;
     #check:checked~  li a{
         right:0
     }
-    /* #check:checked ~ ul.checkbtn + ul li a {
-        right: 0;
-      } */
-
-      
+     
     #check:checked~ label #bars{
         display: none;
     } 
     #check:checked ~ label #cancle{
 display: block;    
 } 
+
 
 }
 

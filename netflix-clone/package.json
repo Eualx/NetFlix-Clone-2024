@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
+    "@react-icons/all-files": "^4.1.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "movie-trailer": "^3.2.2",

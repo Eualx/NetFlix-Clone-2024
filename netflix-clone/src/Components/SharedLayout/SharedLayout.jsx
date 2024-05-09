@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 const SharedLayout = () => {
   return (
     <div>
-        <Header />
+        {/* <Header /> */}
         <Outlet />
         <Footer />
     </div>
