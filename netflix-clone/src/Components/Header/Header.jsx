@@ -4,8 +4,12 @@ import Logo from "../../assets/image/NetflixLogo.png";
 import Avatarlogo from "../../assets/image/NetflixAvatorlogo.png";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Link } from "react-router-dom";
-import Nav from "./Nav"
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+// import { Link } from "react-router-dom";
+import Navigation from "./Navigation"
 const Header = () => {
   const [show, handleShow] = useState(false);
   useEffect(() => {
@@ -19,25 +23,15 @@ const Header = () => {
   return (
     <div className={`header_outer_container ${show && "nav_black"}`}>
       <div className="header_container">
-        <div className="left">
-          <ul>
-            <li className="image">
+
+      <div className='header_left'>
+                <ul>
+                <li className="image">
               <a href="#">
                 <img src={Logo} alt="NetFlix Logo" width="100" />
               </a>
-            </li>
-          </ul>
-        </div>
-        <div className="center">
-          <ul>
-            <Nav />
-            <li className="browse">Browse</li>
-            <input type="checkbox" id="check" />
-            <label htmlFor="check" class="checkbtn">
-              <i className="fas fa-angle-down" id="bars"></i>
-              <i className="fas fa-angle-up" id="cancle"></i>
-            </label>
-            <li>
+            </li>      
+           <li>
               <a href="/Home">Home</a>
             </li>
             <li>
@@ -56,11 +50,13 @@ const Header = () => {
               <a href="/Browse_by_Language">Browse by Language</a>
             </li>
           </ul>
-        </div>
-        <div className="right">
+               
+            </div>
+            <div className="header_right">
           <ul>
             <i className="fa fa-search" aria-hidden="true"></i>
-            {/* <li><a href="#"><SearchIcon/></a></li> */}
+            {/* <input type="text" name=''placeholder='   Titles, people, genres'/>  */}
+        <a href=""></a>
             <li>
               <a href="#">kids</a>
             </li>
@@ -81,6 +77,56 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
+
+
+
+
+
+
+        
+        {/* <div>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <div className=" DropDown ">
+              <NavDropdown title="Browse" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/home">
+                    <p>Home </p>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/tvshow">
+                    <p>TVShows</p>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/movies">
+                    <p>Movies</p>
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/new&popular">
+                    <p> New & Popular</p>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/mylist">
+                    <p>My List</p>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/browsebylanguages">
+                    <p>Browse by Languages</p>
+                  </NavDropdown.Item>
+              </NavDropdown>
+            </div>
+           </Nav>
+        </Navbar.Collapse>
+      
+    </Navbar>
+    </div>  */}
+        
+            {/* <li className="browse">Browse</li>
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" class="checkbtn">
+              <i className="fas fa-angle-down" id="bars"></i>
+              <i className="fas fa-angle-up" id="cancle"></i>
+            </label> */}
+          
+     
+    
         {/* <div className='box'>
         <i class="fa fa-search" aria-hidden="true"></i>
           <input type="text" name=''placeholder='   Titles, people, genres'/> 

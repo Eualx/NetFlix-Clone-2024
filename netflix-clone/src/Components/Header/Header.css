@@ -1,4 +1,4 @@
-.header_outer_container {
+ .header_outer_container {
     position: sticky;
     top: 0;
     display: flex;
@@ -10,7 +10,8 @@
 transition: all 0.5s;
 transition-timing-function: ease-in;
 z-index: 1;
-}
+width: 100%;
+ }
 .nav_black {
     background-color: rgb(20, 20, 20);
 }
@@ -20,38 +21,55 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.right ul {
+
+.header_left ul {
     width: 140%;
     display: flex;
     align-items: center;
     list-style: none;
-    justify-content: space-between;
-}
-
-.center  ul{
-    width: 140%;
-    display: flex;
-    align-items: center;
     list-style: none;
     justify-content: space-between;
     cursor: pointer;
 }
-.center{
-    margin-right:40%;
+.header_left a{
+text-decoration: none;
+color: black;
 }
-.left ul {
+.header_right ul {
     width: 140%;
+    display: flex;
+    align-items: center;
     list-style: none;
+    justify-content: space-between;
+    
 }
-.header_outer_container a{
+.header_right a{
     text-decoration: none;
-    color: white;
+    color: black;
+}
+.Navabar{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .header_left ul li:not(:first-child ){
+        display: none;
+    }
+    .Navabar #bg-body-tertiary{
+        display: block;
+    }
+
 }
 
-#check, .browse{
+
+
+
+
+
+
+/* #check, .browse{
     display: none;
-} 
-.checkbtn #bars,
+}  */
+/* .checkbtn #bars,
 .checkbtn #cancle {
     color: white;
     font-size: 15px;
@@ -59,10 +77,10 @@ align-items: center;
     margin: 25px 5px;
     cursor: pointer;
     display: none;
-}
-#basic-nav-dropdown{
+} */
+/* .dropdown{
     display: none;
-}
+} */
 /* .box{
     width: 200px;
     height: 4px;
@@ -100,17 +118,17 @@ color: #777;
 } */
 
 
-@media (max-width:768px) {
-     .browse{
-        display: block !important;
-    }
-    .center  ul li a{
-        display: none;
-    }
-    .checkbtn #bars{
+
+     /* .browse{
         display: block;
-    }
-    .center ul li a{
+    } */
+    /* .center  ul li a{
+        display: none;
+    } */
+    /* .checkbtn #bars{
+        display: block;
+    } */
+    /* .center ul li a{
         background-color: rgb(6, 6, 6);
         position: fixed;
         text-align: center;
@@ -121,21 +139,22 @@ color: #777;
         transition: all 0.3s;
         font-size: 20px;
         padding: 20px;
-    }
+    } */
    
-    #check:checked~  li a{
+    /* #check:checked~  li a{
         right:0
-    }
+    } */
      
-    #check:checked~ label #bars{
+    /* #check:checked~ label #bars{
         display: none;
-    } 
-    #check:checked ~ label #cancle{
+    }  */
+    /* #check:checked ~ label #cancle{
 display: block;    
-} 
-#basic-nav-dropdown{
+}  */
+/* .dropdown{
     display: block;
-}
 
-}
+} */
+
+
 
