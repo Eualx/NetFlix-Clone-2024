@@ -4,15 +4,15 @@ import { Route, Routes } from "react-router-dom";
 import Four04 from "../src/Components/404/Four04.jsx"
 import TvShows from "../src/Components/TvShows/TvShows.jsx";
 import SharedLayout from './Components/SharedLayout/SharedLayout.jsx';
-import Navigation from './Components/jusiExample/Nav.jsx';
+// import Navigation from './Components/jusiExample/Nav.jsx';
 
 function App() {
 
   return (
     <>
   <Home />
-   
-    {/* <Routes>
+{/*    
+    <Routes>
         <Route path="/" element={<SharedLayout/>}>
         < Route path="TvShows" element={<TvShows/>}/>
         < Route path="Home" element={<Home/>}/> 

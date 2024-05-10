@@ -5,6 +5,7 @@ import Avatarlogo from "../../assets/image/NetflixAvatorlogo.png";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
+import Nav from "./Nav"
 const Header = () => {
   const [show, handleShow] = useState(false);
   useEffect(() => {
@@ -29,6 +30,7 @@ const Header = () => {
         </div>
         <div className="center">
           <ul>
+            <Nav />
             <li className="browse">Browse</li>
             <input type="checkbox" id="check" />
             <label htmlFor="check" class="checkbtn">
@@ -36,22 +38,22 @@ const Header = () => {
               <i className="fas fa-angle-up" id="cancle"></i>
             </label>
             <li>
-              <Link to="/Home">Home</Link>
+              <a href="/Home">Home</a>
             </li>
             <li>
-              <Link to="/TvShows">TVShows</Link>
+              <a href="/TvShows">TVShows</a>
             </li>
             <li>
-              <Link to="/Movies">Movies</Link>
+              <a href="/Movies">Movies</a>
             </li>
             <li>
-              <Link to="/New_Popular">New & Popular</Link>
+              <a href="/New_Popular">New & Popular</a>
             </li>
             <li>
-              <Link to="/My_List">My List</Link>
+              <a href="/My_List">My List</a>
             </li>
             <li>
-              <Link to="/Browse_by_Language">Browse by Language</Link>
+              <a href="/Browse_by_Language">Browse by Language</a>
             </li>
           </ul>
         </div>

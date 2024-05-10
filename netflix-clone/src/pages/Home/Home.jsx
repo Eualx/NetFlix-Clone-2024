@@ -2,13 +2,13 @@ import React from "react";
 import Banner from "../../Components/Banner/Banner";
 import RowList from "../../Components/Rows/RowList/RowList";
 import Footer from "../../Components/Footer/Footer";
-// import Header from "../../Components/Header/Header";
+import Header from "../../Components/Header/Header";
 
 
 const Home =()=>{
     return (
         <>
-       {/* <Header /> */}
+       <Header />
         <Banner />
         <RowList />
         <Footer />

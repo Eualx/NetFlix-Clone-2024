@@ -60,6 +60,9 @@ align-items: center;
     cursor: pointer;
     display: none;
 }
+#basic-nav-dropdown{
+    display: none;
+}
 /* .box{
     width: 200px;
     height: 4px;
@@ -130,7 +133,9 @@ color: #777;
     #check:checked ~ label #cancle{
 display: block;    
 } 
-
+#basic-nav-dropdown{
+    display: block;
+}
 
 }
 
