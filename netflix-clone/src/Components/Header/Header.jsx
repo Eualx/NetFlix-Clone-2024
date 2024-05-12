@@ -4,6 +4,8 @@ import Logo from "../../assets/image/NetflixLogo.png";
 import Avatarlogo from "../../assets/image/NetflixAvatorlogo.png";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import {logout} from '../../Firebase/FirBaseL'
+import { Link } from "react-router-dom";
 // import Nav from "react-bootstrap/Nav";
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
@@ -25,9 +27,9 @@ const Header = () => {
       <div className='header_left'>
                 <ul>
                 <li className="image">
-              <a href="#">
+              <Link href="#">
                 <img src={Logo} alt="NetFlix Logo" width="100" />
-              </a>
+              </Link>
             </li> 
             <p>Browse</p>
             <input type="checkbox" id="check" />
@@ -38,56 +40,26 @@ const Header = () => {
 
 
            <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/TvShows">TVShows</a>
+              <Link to="/tvShows">TVShows</Link>
             </li>
             <li>
-              <a href="/Movies">Movies</a>
+              <Link to="/movies">Movies</Link>
             </li>
             <li>
-              <a href="/New_Popular">New & Popular</a>
+              <Link to="/new_Popular">New & Popular</Link>
             </li>
             <li>
-              <a href="/My_List">My List</a>
+              <Link to="/my_List">My List</Link>
             </li>
             <li>
-              <a href="/Browse_by_Language">Browse by Language</a>
+              <Link to="/browse_by_Language">Browse by Language</Link>
             </li>
           </ul>
             </div>
-              {/* <div className="Navabar">
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <div className="dropdown">
-              <NavDropdown title="Browse" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/home">
-                    <p>Home </p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/tvshow">
-                    <p>TVShows</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/movies">
-                    <p>Movies</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/new&popular">
-                    <p> New & Popular</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/mylist">
-                    <p>My List</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/browsebylanguages">
-                    <p>Browse by Languages</p>
-                  </NavDropdown.Item>
-              </NavDropdown>
-              </div>
-           </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-            </div>   */}
+              
    
             <div className="header_right">
           <ul>
@@ -98,66 +70,24 @@ const Header = () => {
               <a href="#">kids</a>
             </li>
             <li>
-              <a href="#">
+              <Link to="#">
                 <NotificationsNoneIcon />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#"></a>
-              <img src={Avatarlogo} alt="NetFlixAvator Logo" width="20" />
-              <a />
+              <Link to="#">
+                 <img src={Avatarlogo} alt="NetFlixAvator Logo" width="20" />
+              </Link>
             </li>
-            <li>
-              <a href="#">
-                <ArrowDropDownIcon />
-              </a>
-            </li>
-          </ul>
+                   <li>
+              <Link to="#" onClick={()=>{logout()}}>
+                <ArrowDropDownIcon  />
+              </Link>
+              </li>
+            </ul>
         </div>
 
-
-
-
-
-
-
         
-        {/* <div>
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <div className=" DropDown ">
-              <NavDropdown title="Browse" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/home">
-                    <p>Home </p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/tvshow">
-                    <p>TVShows</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/movies">
-                    <p>Movies</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/new&popular">
-                    <p> New & Popular</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/mylist">
-                    <p>My List</p>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="/browsebylanguages">
-                    <p>Browse by Languages</p>
-                  </NavDropdown.Item>
-              </NavDropdown>
-            </div>
-           </Nav>
-        </Navbar.Collapse>
-      
-    </Navbar>
-    </div>  */}
-        
-           
-          
-     
     
         {/* <div className='box'>
         <i class="fa fa-search" aria-hidden="true"></i>

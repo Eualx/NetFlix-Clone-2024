@@ -80,6 +80,16 @@
     font-weight: 500;
     cursor: pointer;
  }
+ .login-spinner{
+   width: 100%;
+   height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .login-spinner img{
+width: 60px;
+ }
  /* @media (min-width: 768px) {
    .login-form {
        max-width: 600px; /* Adjust as needed for larger screens */
