@@ -4,25 +4,27 @@ import { Route, Routes } from "react-router-dom";
 import Four04 from "../src/Components/404/Four04.jsx"
 import TvShows from "../src/Components/TvShows/TvShows.jsx";
 import SharedLayout from './Components/SharedLayout/SharedLayout.jsx';
-// import Navigation from './Components/jusiExample/Nav.jsx';
+import Login from './pages/LoginPage/Login.jsx'
+
 
 function App() {
 
   return (
     <>
-  <Home />
-{/*    
+  {/* <Home /> */}
+   
     <Routes>
         <Route path="/" element={<SharedLayout/>}>
         < Route path="TvShows" element={<TvShows/>}/>
-        < Route path="Home" element={<Home/>}/> 
-        < Route path="Movies" element={<Four04/>}/> 
+        < Route path="/" element={<Home/>}/>  
+        < Route path="Movies" element={<Four04/>}/>
         < Route path="New_Popular" element={<Four04/>}/> 
         < Route path="My_List" element={<Four04/>}/> 
         < Route path="Browse_by_Language" element={<Four04/>}/> 
-        <Route path="*" element={<Four04/>}/>  
+        <Route path="*" element={<Four04/>}/>   
+        <Route path='login' element={<Login/>}/>
         </Route>
-        </Routes> */}
+        </Routes> 
     </>
   )
 }

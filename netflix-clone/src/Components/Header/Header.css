@@ -27,13 +27,12 @@ align-items: center;
     display: flex;
     align-items: center;
     list-style: none;
-    list-style: none;
     justify-content: space-between;
     cursor: pointer;
 }
 .header_left a{
 text-decoration: none;
-color: black;
+color: white;
 }
 .header_right ul {
     width: 140%;
@@ -45,31 +44,13 @@ color: black;
 }
 .header_right a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.Navabar{
+
+#check, p{
     display: none;
-}
-@media screen and (max-width:768px) {
-    .header_left ul li:not(:first-child ){
-        display: none;
-    }
-    .Navabar #bg-body-tertiary{
-        display: block;
-    }
-
-}
-
-
-
-
-
-
-
-/* #check, .browse{
-    display: none;
-}  */
-/* .checkbtn #bars,
+}  
+ .checkbtn #bars,
 .checkbtn #cancle {
     color: white;
     font-size: 15px;
@@ -77,7 +58,56 @@ color: black;
     margin: 25px 5px;
     cursor: pointer;
     display: none;
-} */
+}  
+
+@media screen and (max-width:768px) {
+    .header_left ul li:not(:first-child ){
+        display: none;
+    }
+   p{
+    margin-top: 15px;
+    margin-right: 0px;
+    padding-right: 0px;
+        display: block;
+
+    } 
+    .checkbtn #bars{
+        margin-left: 0px;
+        display: block;
+    } 
+    .center ul li a{
+        background-color: rgb(6, 6, 6);
+        position: fixed;
+        text-align: center;
+        width: 75%;
+        height: 20vh;
+        right: -120%;
+        margin-left: 0;
+        transition: all 0.3s;
+        font-size: 20px;
+        padding: 20px;
+    } 
+   
+     #check:checked~  li a{
+        right:0
+    } 
+     
+ #check:checked~ label #bars{
+        display: none;
+    }  
+    #check:checked ~ label #cancle{
+display: block;    
+} 
+
+}
+
+
+
+
+
+
+
+
 /* .dropdown{
     display: none;
 } */
@@ -119,38 +149,7 @@ color: #777;
 
 
 
-     /* .browse{
-        display: block;
-    } */
-    /* .center  ul li a{
-        display: none;
-    } */
-    /* .checkbtn #bars{
-        display: block;
-    } */
-    /* .center ul li a{
-        background-color: rgb(6, 6, 6);
-        position: fixed;
-        text-align: center;
-        width: 75%;
-        height: 20vh;
-        right: -120%;
-        margin-left: 0;
-        transition: all 0.3s;
-        font-size: 20px;
-        padding: 20px;
-    } */
-   
-    /* #check:checked~  li a{
-        right:0
-    } */
-     
-    /* #check:checked~ label #bars{
-        display: none;
-    }  */
-    /* #check:checked ~ label #cancle{
-display: block;    
-}  */
+    
 /* .dropdown{
     display: block;
 
