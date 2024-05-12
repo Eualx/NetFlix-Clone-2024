@@ -1,15 +1,11 @@
+
 .login{
     height: 100vh;
     background-image: linear-gradient(#0000007e,#0000007e ), url(../../assets//image//Background_page.jpeg);
     padding: 20px 8%;
 }
-.footer_outer_container {
-    display: none;   
-}
-.header_outer_container {
-    display:none;
- }
  .login-logo{
+
     width: 150px;
  }
  .login-form{
@@ -84,3 +80,8 @@
     font-weight: 500;
     cursor: pointer;
  }
+ /* @media (min-width: 768px) {
+   .login-form {
+       max-width: 600px; /* Adjust as needed for larger screens */
+   /* }
+}  */

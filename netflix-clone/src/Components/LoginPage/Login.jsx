@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/image/NetflixLogo.png";
 import './Login.css'
-import '../../Components/Footer/Footer.css'
-import '../../Components/Header/Header.css'
-
 function Login() {
     const [SignState ,setSignState]=useState("Sign In")
   return (

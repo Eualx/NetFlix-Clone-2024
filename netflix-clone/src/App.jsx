@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Four04 from "../src/Components/404/Four04.jsx"
 import TvShows from "../src/Components/TvShows/TvShows.jsx";
 import SharedLayout from './Components/SharedLayout/SharedLayout.jsx';
-import Login from './pages/LoginPage/Login.jsx'
+import Login from './Components/LoginPage/Login.jsx'
 
 
 function App() {
