@@ -8,13 +8,13 @@ const Row = ({title,fetchurl,isLargeRow}) => {
         const [movies,setMovie]=useState([])
         const [trailerurl,setTrailerurl]=useState("")
         const base_url="https://image.tmdb.org/t/p/original";
+        // https://api.themoviedb.org/3
         useEffect(()=>{ 
             (async ()=>{
                 try{
-            // console.log(fetchurl)
-            // const request= await axios.get(fetchurl)
+            console.log(fetchurl)
             const request= await axios.get(fetchurl)
-            // console.log(request)
+            console.log(request)
             setMovie(request.data.results)
         } catch(error){
             console.log("error",error)
@@ -36,7 +36,7 @@ if (trailerurl){
         setTrailerurl(urlparams.get('v'))
     } )
 }}
-
+// ?@ It takes a movie object as a parameter. It checks if trailerurl (presumably a state variable) is truthy. If it is, it sets trailerurl to an empty string.If trailerurl is falsy, it calls the movieTrailer function, passing either movie.title, movie.name, or movie.original_name as an argument. This function presumably fetches a trailer URL based on the movie's title, name, or original name. When the promise returned by movieTrailer resolves, it extracts the video ID from the URL using URLSearchParams, and sets the trailerurl state variable to this video ID.Finally, it seems to handle the trailer URL in some way, perhaps displaying it in the UI or using it for some other purpose.
         const opts={
             height:"390",
             width:"100%",

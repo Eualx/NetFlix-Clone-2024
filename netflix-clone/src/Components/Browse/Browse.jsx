@@ -1,9 +1,9 @@
 import React from 'react'
 
-function BrowseByLanguage() {
+function Browse() {
   return (
     <div>BrowseByLanguage</div>
   )
 }
 
-export default BrowseByLanguage
+export default Browse

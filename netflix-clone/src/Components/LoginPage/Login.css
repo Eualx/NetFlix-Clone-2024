@@ -54,8 +54,20 @@
     margin-top: 20px;
     cursor: pointer;
  }
+ .login-form .code {
+    background: #1F1F1E;
+    color: white;
+    margin: 12px 0;  
+    font-size:16px;
+  
+}
+.login-form p{
+   color: white;
+   text-align: center;
+   margin-top: 10px;
+}
  .form-help{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
     color: #b3b3b3;
@@ -65,6 +77,14 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: medium;
+ }
+ .form-help a{
+   align-items:center;
+ }
+ .lastblock{
+   font-size: small;
+   width: 300px;;
  }
  .remember input{
     width:  18px;
@@ -90,8 +110,12 @@
  .login-spinner img{
 width: 60px;
  }
- /* @media (min-width: 768px) {
+ @media (min-width: 500px) {
+   .login{
+      padding: 15px 5%;
+   }
    .login-form {
-       max-width: 600px; /* Adjust as needed for larger screens */
-   /* }
-}  */
+      padding: 20px;
+      margin-top: 30px;
+      }
+   }

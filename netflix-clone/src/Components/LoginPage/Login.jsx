@@ -9,10 +9,10 @@ function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
   const user_auth = async (event) => {
     event.preventDefault();
-    // setLoading(true)
+    setLoading(true)
     if (SignState === "Sign In") {
       await login(email, password);
     } else {
@@ -24,7 +24,11 @@ function Login() {
     //  <div className="login-spinner">
     //   <img src={netflix_spinner} alt="" />
     // </div>
+
+    
+
     <div className="login">
+    
       <img src={logo} className="login-logo" alt="" />
       <div className="login-form">
         <h1>{SignState}</h1>
@@ -41,7 +45,7 @@ function Login() {
           ) : (
             <></>
           )}
-
+          
           <input
             value={email}
             onChange={(e) => {
@@ -62,18 +66,24 @@ function Login() {
             {" "}
             {SignState}
           </button>
+          {SignState === "Sign In" ? 
+          <p>Or</p>:<></>}
+          {SignState === "Sign In" ? 
+          <button  className="code" onClick={user_auth} type="submit">
+            Use a sign-in Code
+          </button> :<></>}
           <div className="form-help">
+          <a href="">Forgot Password?</a>
             <div className="remember">
               <input type="checkbox" />
               <labela htmlFor="">Remember Me</labela>
-            </div>
-            <p> Need Help?</p>
+            </div> 
           </div>
         </form>
         <div className="form-switch">
           {SignState === "Sign In" ? (
             <p>
-              New to Netflix{" "}
+              New to Netflix ?{" "}
               <span
                 onClick={() => {
                   setSignState("Sign Up");
@@ -81,8 +91,9 @@ function Login() {
               >
                 Sign Up Now
               </span>
-            </p>
-          ) : (
+            </p>) : 
+            (
+              
             <p>
               Already have account?{" "}
               <span
@@ -93,11 +104,17 @@ function Login() {
                 Sign In Now
               </span>
             </p>
-          )}
+          )
+        }
+          <div className="lastblock">
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <span><a href="">Learn more</a></span>.</p>
+          </div>
         </div>
       </div>
+     
     </div>
-  );
+   
+  )
 }
 
 export default Login;
