@@ -25,8 +25,6 @@ function Login() {
     //   <img src={netflix_spinner} alt="" />
     // </div>
 
-    
-
     <div className="login">
     
       <img src={logo} className="login-logo" alt="" />

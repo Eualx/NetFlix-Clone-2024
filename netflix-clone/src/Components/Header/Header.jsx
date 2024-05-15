@@ -27,22 +27,15 @@ const Header = () => {
       <div className='header_left'>
       <ul>
       <li className="image">
-              <Link href="#">
+              <Link href="/">
                 <img src={Logo} alt="NetFlix Logo" width="100" />
               </Link>
             </li> 
-            {/* <p>Browse</p>
-            <input type="checkbox" id="check" />
-            <label htmlFor="check" class="checkbtn">
-              <i className="fas fa-angle-down" id="bars"></i>
-              <i className="fas fa-angle-up" id="cancle"></i>
-  </label>  */}
-              
            <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/tvShows/">TVShows</Link>
+              <Link to="/tvShows">TVShows</Link>
             </li>
             <li>
               <Link to="/movies/">Movies</Link>
@@ -61,9 +54,8 @@ const Header = () => {
               
    
             <div className="header_right">
-          <ul>
-            <i className="fa fa-search" aria-hidden="true"></i>
-            {/* <input type="text" name=''placeholder='   Titles, people, genres'/>  */}
+          <ul> 
+       <i className="fa fa-search" aria-hidden="true" ></i>    
         <a href=""></a>
             <li>
               <a href="#">kids</a>
@@ -79,20 +71,15 @@ const Header = () => {
               </Link>
             </li>
                    <li>
-              <Link to="#" onClick={()=>{logout()}}>
+              <Link to="#" onClick={()=>{logout()}} >
                 <ArrowDropDownIcon  />
               </Link>
               </li>
             </ul>
+        </div>   
         </div>
-        {/* <div className='box'>
-        <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="text" name=''placeholder='   Titles, people, genres'/> 
-        <a href=""></a>
-      
-        </div> */}
       </div>
-    </div>
+   
   );
 };
 

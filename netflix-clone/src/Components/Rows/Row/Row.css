@@ -11,6 +11,7 @@
     overflow-x: scroll;
     padding: 20px;
 }
+
 .row_posters::-webkit-scrollbar{
     display: none;
 }
@@ -26,5 +27,11 @@
 .row{
     margin-left: 20px;
     color: white;
-    /* background-color: black; */
+    
+}
+@media (max-width:760px){
+    .row_posters{
+        display: flex;
+        
+    }
 }

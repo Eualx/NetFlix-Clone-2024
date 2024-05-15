@@ -8,7 +8,6 @@ const Row = ({title,fetchurl,isLargeRow}) => {
         const [movies,setMovie]=useState([])
         const [trailerurl,setTrailerurl]=useState("")
         const base_url="https://image.tmdb.org/t/p/original";
-        // https://api.themoviedb.org/3
         useEffect(()=>{ 
             (async ()=>{
                 try{

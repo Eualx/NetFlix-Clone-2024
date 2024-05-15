@@ -1,0 +1,109 @@
+.logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
+    object-fit: contain;
+     }
+.Loginscreen{
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(#0000007e,#0000007e ), url(../../assets//image//Background_page.jpeg);
+}
+.button{
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #C11119;
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+.logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
+    object-fit: contain;
+     }
+
+.loginScreen_gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+.loginScreen_body > h1 {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+   
+  
+}
+
+.loginScreen_body{
+    position: absolute;
+    top: 30%;
+    margin-left: 250px;
+    margin-right: auto;
+z-index: 1;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+.loginScreen_body >h2{
+font-size: 1.6rem;
+font-weight:400 ;
+margin-bottom: 30px;
+}
+.loginScreen_body >h3{
+font-size: 1.2rem;
+font-weight: 400;
+}
+.loginScreen_input>form >input{
+    color: white;
+    background-color:transparent;
+    padding: 5px 5px 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 70%;
+   margin-left: 20px;
+}
+
+
+.loginScreen_input>form> button {
+    padding: 5px 5px 10px;
+    font-size: 20px;
+    background-color: #C11119;
+    color: #fff;
+    border: 1px;
+    border-radius:5px;
+    font-weight: 600;
+    
+}
+.loginScreen_input>form> button ::after{
+font-family: "FontAwesome";
+content: "\f105";
+color: beige;
+}
+
+@media  (max-width:760px) {
+    .loginScreen_body{
+        position: absolute;
+        top: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+}
+
+
+
+
