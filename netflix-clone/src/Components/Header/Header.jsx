@@ -4,7 +4,6 @@ import Logo from "../../assets/image/NetflixLogo.png";
 import Avatarlogo from "../../assets/image/NetflixAvatorlogo.png";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import {logout} from '../../Firebase/FirBaseL'
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation"
 const Header = () => {

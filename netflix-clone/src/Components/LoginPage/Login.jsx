@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/image/NetflixLogo.png";
 import "./Login.css";
-import { login, signup } from "../../Firebase/FirBaseL";
+// import { login, signup } from "../../Firebase/FirBaseL";
 // import netflix_spinner from '../../assets/image/netflix_spinner.gif'
 
 function Login() {
