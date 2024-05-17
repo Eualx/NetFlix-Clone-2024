@@ -58,3 +58,30 @@ rgb(37,37,37,0.91),
 #111
     );
 }
+@media screen and (max-width: 768px) {
+    .banner {
+      height: 40vh;
+    }
+    .banner_contents {
+      padding-top: 140px;
+      height: auto;
+    }
+  
+    .banner_title {
+      font-size: 2rem;
+      font-weight: 400;
+      padding-bottom: 0.1rem;
+    }
+    .banner_description {
+      width: 20rem;
+      font-size: 0.5rem;
+      height: auto;
+    }
+    .banner_button {
+      padding: 0.5rem 2rem;
+      margin-right: 1rem;
+    }
+    .banner_fadeBottom {
+      height: 8rem;
+    }
+  }

@@ -1,10 +1,13 @@
 import React from 'react'
-import Row from '../../Components/Rows/Row/Row'
-import requests from "../../Utils/Request"
+import TvShowbanner from './TvShowbanner'
+import TvShowRowList from './TvShowRowList.jsx'
+
 const TvShows = () => {
   return (
     <div>
-<Row fetchurl={requests.fetchTvShow} />
+      <TvShowbanner/>
+      <TvShowRowList />
+      
 
     </div>
   )

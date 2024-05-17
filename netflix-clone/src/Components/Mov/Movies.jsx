@@ -1,9 +1,17 @@
 import React from 'react'
+import MoviesBanner from './MoviesBanner'
+import MoviesRowList from './MovieRowList/MoviesRowList'
 
-function Movies() {
+const Movies = () => {
   return (
-    <div><p>Movies</p></div>
+    <div>
+     
+     <MoviesBanner />
+<MoviesRowList />
+
+    </div>
   )
 }
 
 export default Movies
+
